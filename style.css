@@ -1,0 +1,48 @@
+body {
+    position: relative;
+}
+
+#fhr-overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#fhr-overlay .fhr-rating {
+    position: absolute;
+    z-index: 101;
+    color: #fff;
+    background: #6f6f87;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+    pointer-events: auto;
+}
+
+#fhr-overlay .fhr-rating--fail,
+#fhr-overlay .fhr-rating--1 {
+    background: #ff3722;
+}
+
+#fhr-overlay .fhr-rating--2 {
+    background: #ff8622;
+}
+
+#fhr-overlay .fhr-rating--3 {
+    background: #ffce00;
+}
+
+#fhr-overlay .fhr-rating--4 {
+    background: #73cf11;
+}
+
+#fhr-overlay .fhr-rating--pass,
+#fhr-overlay .fhr-rating--5 {
+    background: #00b67a;
+}
